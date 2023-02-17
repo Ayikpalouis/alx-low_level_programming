@@ -1,36 +1,22 @@
 #include <stdio.h>
 /**
- * main - print numbers from 00 to 99.
-(*
- * Return: 0 on success
- */
+  * main - The entry point of C programs
+  * @void: The function takes no parameters
+  *
+  * Description: This program prints the alphabet in lowercase, followed by
+  * a new line. You are to use only the putchar function not more than two
+  * times.
+  * Return: 0
+  */
 int main(void)
 {
-	int i = '0';
-	int j = '0';
+	char lower_alpha = 'a';
 
-	while (i <= '9')
+	while (lower_alpha <= 'z')
 	{
-		while (j <= '9')
-		{
-			putchar(i);
-			putchar(j);
-			if (j == '9' && i == '9')
-			{
-				putchar('\n');
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			j++;
-		}
-		if (j >= '9')
-		{
-			j = '0';
-		}
-		i++;
+		putchar(lower_alpha);
+		lower_alpha++;
 	}
+	putchar('\n');
 	return (0);
 }
