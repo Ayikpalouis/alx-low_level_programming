@@ -7,10 +7,10 @@
 
 int main(void)
 {
-int a;
+	int a;
 
-a = 98;
-positive_or_negative(a);
+	a = 0;
+	positive_or_negative(a);
 
-return (0);
+	return (0);
 }
