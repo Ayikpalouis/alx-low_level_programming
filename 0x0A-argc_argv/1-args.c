@@ -5,20 +5,14 @@
  * @argc: argument count
  * @argv: argument vector, that is, array of arguments
  *
- * Description: A program that prints all arguments passed to it.
+ * Description: A program that prints number of arguments passed to it
  *
  * Return: Always 0 (success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__ ((unused)) *argv[])
 {
-	int i = 0;
-
-	while (i < argc)
-	{
-		printf("%s\n", argv[i]);
-		i++;
-	}
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
